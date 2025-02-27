@@ -1,8 +1,0 @@
-
-h1.title { background-color: rgba(240, 248, 255, 0.5); color: rgb(155, 235, 8); position: fixed; top: 15px; left: 33%; padding: 10px; margin: 0px; width: 36%; font-size: 400%; z-index: 5; }
-
-body { width: 96%; margin: 0 auto; background-color: rgba(122, 61, 61, 0.8); background-image: url(./Photos/background.png);  background-size: cover; }
-
-ul.bottom { position: fixed; font-size: 25px; bottom: 100px; right: 10px; width: 19%; }
-
-a.link{ color: rgb(255, 255, 255);}
