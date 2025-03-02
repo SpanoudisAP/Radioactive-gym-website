@@ -1,0 +1,13 @@
+body {
+    
+    background-image: url(./Photos/background.png); /* Background image */
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat;
+    height: 70%;
+
+}
+.container {
+    background-color: rgba(223, 117, 117, 0.7);
+    padding: 2%;
+}
