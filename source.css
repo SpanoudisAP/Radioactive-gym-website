@@ -5,9 +5,38 @@ body {
     background-position: center;
     background-repeat: repeat;
     height: 70%;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
 
 }
 .container {
     background-color: rgba(223, 117, 117, 0.7);
     padding: 2%;
+}
+
+body.dark-mode {
+    background-color: #443434; /* Dark mode background */
+    color: white; /* Dark mode text color */
+}
+body.dark-mode .container {
+    background-color: rgba(88, 45, 45, 0.7); /* Dark mode container */
+}
+.navbar-dark-mode {
+    background-color: #443434; /* Dark background for navbar */
+    color: white; /* Text color for dark navbar */
+}/* Dark Mode Styles for the modal*/
+
+.dark-mode .modal-content {
+    background-color: #443434; /* Dark background */
+    color: #ffffff; /* Light text */
+}
+
+.dark-mode .modal-header {
+    border-bottom: 1px solid #443434; /* Darker border for header */
+}
+
+.dark-mode .modal-footer {
+    border-top: 1px solid #443434; /* Darker border for footer */
+}
+body, .navbar, .modal-content, footer {
+    transition: background-color 0.3s, color 0.3s;
 }

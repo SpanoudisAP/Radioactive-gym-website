@@ -9,6 +9,7 @@
     <script src="script.js" defer ></script> <! Javascript >
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> <! jquery >
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> <!Bootstrap JS (for carousel functionality)>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script> <! cookie>
     <title> Radioactive Gym </title>
 </head>
 <body>
@@ -39,7 +40,7 @@
                 </li>
             </ul>
         </div>
-        <a href="index.html"><button id="toggleButton" class="btn btn-light ml-3" style="position: relative;" aria-label="Toggle dark mode"><img src="./Photos/day.png" style="vertical-align:bottom-right" width="30" height="30" alt="Dark Mode"></button></a>
+        <button id="toggleButton" class="btn btn-light ml-3" style="position: relative;" aria-label="Toggle dark mode"><img src="./Photos/day.png" style="vertical-align:bottom-right" width="30" height="30" alt="Dark Mode"></button>
         <a href="index.html" class="ms-3">
             <img src="./Photos/united-kingdom-flag-button-round-icon-32.png" style="vertical-align:bottom-right" width="30" height="30" alt="English language">
          </a> 
@@ -53,17 +54,18 @@
         </h1></a>
     </div><! End Main title>
 
-    <div class="container">
+    <div class="container"> 
         <div class=" d-fex text-center">
             <h4> These is the Gym that will change your life.</h4>
-            <div id="carouselGallery" class="carousel slide" data-bs-ride="carousel" style="width: 100%; max-width: 1000px;" alt="carousel">
+            
+            <div id="carouselGallery" class="carousel slide" data-bs-ride="carousel" style="width: 100%; " alt="carousel"><! Start of Carousel>
                 <div class="carousel-indicators"><! Indicators >
                     <button type="button" data-bs-target="#carouselGallery" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselGallery" data-bs-slide-to="1" aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#carouselGallery" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
                 
-                <div class="carousel-inner"><! Slides >
+                <div class="carousel-inner ratio ratio-16x9"><! Slides >
                     <div class="carousel-item active">
                         <img src="./Photos/Cimage1.png" class="d-block w-100" alt="First Image">
                     </div>
@@ -84,7 +86,7 @@
                 </button>
             </div>
         </div>
-    </div>
+    </div> <! End of Carousel>
 
     <div class="container mt-5" id="latest-activity" role="region" aria-labelledby="latest-activity-heading">
         <h2 id="latest-activity-heading" class="text-center">Latest Activities</h2>
@@ -98,17 +100,17 @@
                     <h5>Contact Us</h5>
                     <p>Email: <a href="mailto:infoRGYM@gmail.com">infoRGYM@gmail.com</a></p>
                     <p>Follow us on:</p>
-                    <a href="https://facebook.com" class="text-muted" target="_blank" rel="noopener noreferrer"><img src="./Photos/facebook_icon.png" alt="facebook" style="vertical-align:bottom-right" width="30" height="30"></a>|
-                    <a href="https://x.com" class="text-muted" target="_blank" rel="noopener noreferrer"><img src="./Photos/x_icon.jpg" alt="X" style="vertical-align:bottom-right" width="30" height="30"></a>|
-                    <a href="https://instagram.com" class="text-muted" target="_blank" rel="noopener noreferrer"><img src="./Photos/instagram_icon.png" alt="instagram" style="vertical-align:bottom-right" width="30" height="30"></a>|
-                    <a href="https://youtube.com" class="text-muted" target="_blank" rel="noopener noreferrer"><img src="./Photos/youtube_icon.png" alt="youtube" style="vertical-align:bottom-right" width="30" height="30">
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><img src="./Photos/facebook_icon.png" alt="facebook" style="vertical-align:bottom-right" width="30" height="30"></a>|
+                    <a href="https://x.com" target="_blank" rel="noopener noreferrer"><img src="./Photos/x_icon.jpg" alt="X" style="vertical-align:bottom-right" width="30" height="30"></a>|
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><img src="./Photos/instagram_icon.png" alt="instagram" style="vertical-align:bottom-right" width="30" height="30"></a>|
+                    <a href="https://youtube.com" target="_blank" rel="noopener noreferrer"><img src="./Photos/youtube_icon.png" alt="youtube" style="vertical-align:bottom-right" width="30" height="30">
                 </div>
             </div>
         </div>
-            <div class="text-center p-3 bg-light" id="footer-links" role="navigation" aria-label="Footer links">
+            <div class="text-center p-3" id="footer-links" role="navigation" aria-label="Footer links">
                 <a href="./Text/Privacy Policy.txt" download>Privacy Policy</a> | 
                 <a href="./Text/Terms of Service.txt" download>Terms of Service</a>
-                <p class="text-muted">© 2025 RADIOACTIVE GYM All Rights Reserved.</p>
+                <p>© 2025 RADIOACTIVE GYM All Rights Reserved.</p>
             </div>
     </footer>
 
