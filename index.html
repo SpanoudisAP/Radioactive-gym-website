@@ -14,7 +14,7 @@
 </head>
 <body>
     
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top p-2" role="navigation" aria-label="Main navigation"> <! Start of Navigation bar>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top p-2" role="navigation" aria-label="Main navigation"> <! Start of Navigation bar>
         <a class="navbar-brand" href="index.html" aria-label="RADIOACTIVE GYM Homepage">
           <img src="./Photos/kettlebell_icon.png" width="30" height="30" class="d-inline-block align-top" alt="kettlebell_icon">
         </a>
@@ -46,17 +46,26 @@
          </a> 
     </nav><! End of navigaton bar>
 
-    <div class="container"> <! start Main title>
-        <a href="index.html" class="link-underline link-underline-opacity-0"><h1 class=" title text-center " style="font-size: 400%; color: rgb(155, 235, 8);"> 
-            <img src="./Photos/treadmill.gif" alt="Treadmill" height="75px" width="75px" style="vertical-align:bottom"> 
-            RADIOACTIVE GYM
-            <img src="./Photos/weightlifting.gif" alt="Weight Lift" height="75px" width="75px" style="vertical-align:bottom">
-        </h1></a>
-    </div><! End Main title>
+    <div class="container text-center"> <! start Main title>
+        <a href="index.html" class="link-underline link-underline-opacity-0">
+          <h1 class=" title text-center " style="font-size: 400%; color: rgb(155, 235, 8);"> 
+              <img src="./Photos/treadmill.gif" alt="Treadmill" height="75px" width="75px" style="vertical-align:bottom"> 
+              RADIOACTIVE GYM
+              <img src="./Photos/weightlifting.gif" alt="Weight Lift" height="75px" width="75px" style="vertical-align:bottom">
+          </h1>
+        </a>
+      </div><! End Main title>
 
-    <div class="container"> 
+    <div class="container mt-1"> 
         <div class=" d-fex text-center">
-            <h4> These is the Gym that will change your life.</h4>
+            <h4 class="p-3 m-3" style="background-color: rgba(240, 248, 255, 0.5);"> These is the Gym that will change your life.</h4>
+
+            <div class="p-3 m-3">
+                <p style="font-size: 120%;">
+                    This is the Radioactive Gym here you can create your workout sesions. Sorting them by name or by date and you can write down the workout you have done.
+                    If you would like to see the Workout Program click here:<a href="task.html" class="btn btn-primary" role="button" aria-label="Workout Program button">Start Here</a>
+                </p>
+            </div>
             
             <div id="carouselGallery" class="carousel slide" data-bs-ride="carousel" style="width: 100%; " alt="carousel"><! Start of Carousel>
                 <div class="carousel-indicators"><! Indicators >
@@ -67,7 +76,7 @@
                 
                 <div class="carousel-inner ratio ratio-16x9"><! Slides >
                     <div class="carousel-item active">
-                        <img src="./Photos/Cimage1.png" class="d-block w-100" alt="First Image">
+                        <img src="./Photos/Cimage4.png" class="d-block w-100" alt="First Image">
                     </div>
                     <div class="carousel-item">
                         <img src="./Photos/Cimages 2.jpg" class="d-block w-100" alt="Second Image">
@@ -84,12 +93,12 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
-            </div>
+            </div><! End of Carousel>
         </div>
-    </div> <! End of Carousel>
+    </div> 
 
     <div class="container mt-5" id="latest-activity" role="region" aria-labelledby="latest-activity-heading">
-        <h2 id="latest-activity-heading" class="text-center">Latest Activities</h2>
+        <h2 id="latest-activity-heading" class="text-center p-3 m-3" style="background-color: rgba(240, 248, 255, 0.5);">Latest Activities</h2>
         <div id="latest-activity-list" role="list" aria-live="polite"></div>
     </div>
 

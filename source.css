@@ -6,7 +6,7 @@ body {
     background-repeat: repeat;
     height: 70%;
     transition: background-color 0.3s, color 0.3s; /* Smooth transition */
-
+    padding-top: 70px; /* Adjust to the navbar height */
 }
 .container {
     background-color: rgba(223, 117, 117, 0.7);
@@ -18,7 +18,7 @@ body.dark-mode {
     color: white; /* Dark mode text color */
 }
 body.dark-mode .container {
-    background-color: rgba(88, 45, 45, 0.7); /* Dark mode container */
+    background-color: rgba(105, 47, 47, 0.7); /* Dark mode container */
 }
 .navbar-dark-mode {
     background-color: #443434; /* Dark background for navbar */
@@ -34,9 +34,16 @@ body.dark-mode .container {
     border-bottom: 1px solid #443434; /* Darker border for header */
 }
 
-.dark-mode .modal-footer {
-    border-top: 1px solid #443434; /* Darker border for footer */
-}
 body, .navbar, .modal-content, footer {
     transition: background-color 0.3s, color 0.3s;
+}
+.badge {
+    color: black !important; /* Force text to be black */
+}
+.card-img-top {
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-img-top:hover {
+    transform: scale(1.2);
 }

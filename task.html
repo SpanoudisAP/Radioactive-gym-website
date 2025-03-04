@@ -13,7 +13,7 @@
   </head>
   <body>
       
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top p-2" role="navigation" aria-label="Main navigation"> <! Start of Navigation bar>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top p-2" role="navigation" aria-label="Main navigation"> <! Start of Navigation bar>
         <a class="navbar-brand" href="index.html" aria-label="RADIOACTIVE GYM Homepage">
           <img src="./Photos/kettlebell_icon.png" width="30" height="30" class="d-inline-block align-top" alt="kettlebell_icon">
         </a>
@@ -45,12 +45,14 @@
         </a> 
     </nav><! End of navigaton bar>
 
-    <div class="container"> <! start Main title>
-        <a href="index.html" class="link-underline link-underline-opacity-0"><h1 class=" title text-center " style="font-size: 400%; color: rgb(155, 235, 8);"> 
+    <div class="container text-center"> <! start Main title>
+      <a href="index.html" class="link-underline link-underline-opacity-0">
+        <h1 class=" title text-center " style="font-size: 400%; color: rgb(155, 235, 8);"> 
             <img src="./Photos/treadmill.gif" alt="Treadmill" height="75px" width="75px" style="vertical-align:bottom"> 
             RADIOACTIVE GYM
             <img src="./Photos/weightlifting.gif" alt="Weight Lift" height="75px" width="75px" style="vertical-align:bottom">
-        </h1></a>
+        </h1>
+      </a>
     </div><! End Main title>
 
     <div class="container mt-1 ">
@@ -100,13 +102,13 @@
           <thead>
               <tr>
                   <th>Workout Name</th>
-                  <th>Description</th>
                   <th>Workout Date</th>
+                  <th>Description</th>
                   <th>Status</th>
                   <th>Actions</th>
               </tr>
           </thead>
-          <tbody id="task-list" role="rowgroup" aria-live="polite">
+          <tbody id="task-list" role="rowgroup" aria-live="polite" styple="text-">
               <!Tasks will be appended here>
           </tbody>
       </table>
@@ -117,8 +119,8 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="taskModalLabel">Task Actions</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <h5 class="modal-title" id="taskModalLabel">Workout Actions</h5>
+                <button type="button" class="close btn btn-danger position-absolute top-0 end-0" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
