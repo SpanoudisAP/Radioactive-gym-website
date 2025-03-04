@@ -36,7 +36,7 @@ $(document).ready(function() {
         $('footer').toggleClass('bg-light', !isDarkMode).toggleClass('bg-dark text-white', isDarkMode);
 
         // Save the user's dark mode preference
-        Cookies.set('darkMode', isDarkMode, { expires: 7 });
+        Cookies.set('darkMode', isDarkMode, { expires: 30 });
     }
 
     // Initialize dark mode on page load
@@ -191,7 +191,7 @@ $(document).ready(function() {
     function logActivity(activity) {
         const activities = JSON.parse(Cookies.get('activities') || '[]');
         activities.push({ activity, time: new Date().toLocaleString() });
-        Cookies.set('activities', JSON.stringify(activities), { expires: 7 }); // Store activities in cookies
+        Cookies.set('activities', JSON.stringify(activities), { expires: 30 }); // Store activities in cookies
         loadLatestActivities(); // Update latest activities display
     }
 
